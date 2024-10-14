@@ -29,6 +29,9 @@ int main(void)
     assert(map->dev.minor == 2);
     assert(map->inode == 173521);
     assert(strcmp(map->pathname, "/usr/bin/dbus-daemon") == 0);
+    free(mapstr);
+    free(map->pathname);
+    free(map);
     printf("All tests passed :)\n");
     return 0;
 }
