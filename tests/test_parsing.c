@@ -6,13 +6,11 @@
  * @date 2020-04-18
  */
 
-#include "../include/procmaps.h"
+#include "../src/parse_procmaps.c"
 #include <assert.h>
 #include <string.h>
 #include <stddef.h>
 #include <stdio.h>
-
-procmaps_row_t *parse_procmaps_line(char *line);
 
 int main(void)
 {
